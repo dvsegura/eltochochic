@@ -1,4 +1,5 @@
 
+
 *{
 	box-sizing: border-box;
 }
@@ -7,14 +8,42 @@ html,body{
 	max-width: 1200px;	
 }
 img{
-	max-width: 100%;
+	width: 100%;/* max-width para que la imagen no se pixele */
 	vertical-align: bottom;
 }
+.encabezado{	
+	position: relative;
+	margin-bottom: 0px;
+}
+.img_encabezado{
+	width: 100%;
+}
+.encabezado_text{
+	width:40%;
+	min-width: 410px;
+	height: 100px;
+	color:white;
+	font-weight: bold;
+	font-family: sans-serif;
+	font-size: 3em;
+	z-index: 100;
+	position:absolute;	
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	background-color: rgba(0,0,0,.5);
+	line-height: 100px;
+	text-align: center;
+}
+/*******************/
 #centro{
-	margin: 20px auto;	
+	margin: 0 auto;	
 	width: 100%;
 	display: flex;
-	flex-wrap: wrap;	
+	flex-wrap: wrap;
+
 }
 #derecha{
     width: 70%;
@@ -150,5 +179,12 @@ aside{
 }
 .texto{
 	width: 100%;
+}
+.encabezado_text{
+	width: 100%;
+    bottom: auto;
+    font-size: 12vw;
+    height: auto;
+    min-width: 0px;
 }
 }
